@@ -11,3 +11,16 @@ html{
 body{
     padding: 60px;
 }
+
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin: 10px 0;
+    color: gray;
+}
