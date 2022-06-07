@@ -7,6 +7,9 @@
 
 body {
     background-color: rgb(234, 222, 206, 0.8);
+}
+
+#root div:first-child{
     padding: 0 60px;
 }
 
@@ -67,4 +70,25 @@ h2 {
 
 .card p {
     text-transform: capitalize;
+}
+
+/* FOOTER */
+footer{
+    background-color: black;
+    color: white;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    margin-left: 6px;
+    text-decoration: none;
+    color: #800040;
+}
+
+footer a:hover{
+    color: #800040;
+    font-size: large;
 }
