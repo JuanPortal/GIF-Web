@@ -6,12 +6,15 @@ import { GifGridItem } from './GifGridItem';
 export const GifGrid = ({ category }) => {
 
     const [images, setImages] = useState([])
-    const {state, loading} = useFetchGifs()
-    console.log(state, loading);
+
+    const getImages = async() => {
+        const newImages = await getGifs( category )
+        setImages(newImages)
+    }
 
     useEffect(() => {
-        getGifs(category).then(img => setImages(img))
-    }, [category])
+        getImages()
+    }, [])
 
     return (
         <>
