@@ -74,6 +74,7 @@ h2 {
 
 /* FOOTER */
 footer{
+    width: 100%;
     background-color: black;
     color: white;
     height: 8vh;
