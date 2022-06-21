@@ -1,0 +1,95 @@
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(234, 222, 206, 0.8);
+}
+
+#root div:first-child{
+    padding: 0 60px;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin: 20px 0;
+    color: gray;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card p {
+    text-transform: capitalize;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    margin-left: 6px;
+    text-decoration: none;
+    color: #800040;
+}
+
+footer a:hover{
+    color: #800040;
+    font-size: large;
+}
