@@ -1,24 +1,30 @@
 import { useState } from "react"
 import { AddCategory } from "./components/AddCategory"
+import { GifGrid } from "./components/GifGrid"
+import { Footer } from "./components/Footer"
 
 export const GifApp = () => {
 
-    const [ categories, setCategories ] = useState(['Pokémon'])
-    
+    const [categories, setCategories] = useState(['Pokémon'])
+
+    const onAddCategory = newCategory => {
+        if (categories.includes(newCategory)) return
+        setCategories([newCategory, ...categories])
+    }
+
     return (
         <>
-            {/* Title */}
             <h1>GIF App</h1>
 
-            {/* Input */}
-            <AddCategory setCategories={setCategories}/>
+            <AddCategory onNewCategory={onAddCategory} />
 
-            {/* List */}
-            <div>
-                {categories.map(category => {
-                    return <div key={category}>{ category }</div>
-                })}
-            </div>
+            <section>
+                {
+                    categories.map(category => <GifGrid key={category} category={category} />)
+                }
+            </section>
+
+            <Footer />
         </>
     )
 }
