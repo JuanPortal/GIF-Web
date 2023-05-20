@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
     <footer>
-        Developed by <a href="https://github.com/JuanPortal" target="_blank">Juan Portal</a>
+        Developed by <a href="http://juanportalg.com" target="_blank">Juan Portal</a>
     </footer>
   )
 }
